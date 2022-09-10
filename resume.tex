@@ -7,6 +7,29 @@
 
 \documentclass[letterpaper,11pt]{article}
 
+% \usepackage{tikz}
+
+% \newcommand{\ExternalLink}{%
+%     \tikz[x=1.2ex, y=1.2ex, baseline=-0.05ex]{% 
+%         \begin{scope}[x=1ex, y=1ex]
+%             \clip (-0.1,-0.1) 
+%                 --++ (-0, 1.2) 
+%                 --++ (0.6, 0) 
+%                 --++ (0, -0.6) 
+%                 --++ (0.6, 0) 
+%                 --++ (0, -1);
+%             \path[draw, 
+%                 line width = 0.5, 
+%                 rounded corners=0.5] 
+%                 (0,0) rectangle (1,1);
+%         \end{scope}
+%         \path[draw, line width = 0.5] (0.5, 0.5) 
+%             -- (1, 1);
+%         \path[draw, line width = 0.5] (0.6, 1) 
+%             -- (1, 1) -- (1, 0.6);
+%         }   
+%     }
+
 \usepackage{latexsym}
 \usepackage[empty]{fullpage}
 \usepackage{titlesec}
@@ -14,19 +37,17 @@
 \usepackage[usenames,dvipsnames]{color}
 \usepackage{verbatim}
 \usepackage{enumitem}
-\usepackage[hidelinks]{hyperref}
+\usepackage{hyperref}
 \usepackage{fancyhdr}
 \usepackage[english]{babel}
 \usepackage{tabularx}
-\usepackage{fontawesome5}
+\usepackage{fontawesome}
 \usepackage{multicol}
 \setlength{\multicolsep}{-3.0pt}
 \setlength{\columnsep}{-1pt}
 \input{glyphtounicode}
-\usepackage{ragged2e}
 
-\usepackage{xcolor}
-\hypersetup{colorlinks,urlcolor=blue}
+
 
 %----------FONT OPTIONS----------
 % sans-serif
@@ -37,7 +58,7 @@
 
 % serif
 % \usepackage{CormorantGaramond}
-\usepackage{charter}
+% \usepackage{charter}
 
 
 \pagestyle{fancy}
@@ -75,12 +96,6 @@
   }
 }
 
-\newcommand{\achievementItem}[1]{
-  \item\small{
-    {#1 \vspace{-6pt}}
-  }
-}
-
 \newcommand{\classesList}[4]{
     \item\small{
         {#1 #2 #3 #4 \vspace{-2pt}}
@@ -105,7 +120,7 @@
 \newcommand{\resumeProjectHeading}[2]{
     \item
     \begin{tabular*}{1.001\textwidth}{l@{\extracolsep{\fill}}r}
-      \small#1 & \textbf{\small #2} \\
+      \small#1 & \textbf{\small #2}\\
     \end{tabular*}\vspace{-7pt}
 }
 
@@ -116,8 +131,8 @@
 
 \newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=0.0in, label={}]}
 \newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
-\newcommand{\resumeItemListStart}{\justify \begin{itemize}}
-\newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-2pt}}
+\newcommand{\resumeItemListStart}{\begin{itemize}}
+\newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-5pt}}
 
 %-------------------------------------------
 %%%%%%  RESUME STARTS HERE  %%%%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -132,13 +147,13 @@
 % \end{tabular*}
 
 \begin{center}
-    {\Huge \scshape Jai Kumar Dewani} \\ \vspace{1pt}
-    % 123 Street Name, Town, State 12345 \\ 
-    \vspace{5pt}
-    \small \raisebox{-0.1\height}\faPhone\ 9340422023 ~ 
-    \raisebox{-0.2\height}\faEnvelope\ \href{mailto:jai.dewani.99@gmail.com}{ jai.dewani.99@gmail.com} ~ 
-    \raisebox{-0.2\height}\faLinkedin\ \href{https://www.linkedin.com/in/jai-dewani/}{ linkedin.com/in/jai-dewani}  ~
-    \raisebox{-0.2\height}\faGithub\ \href{https://github.com/jai-dewani}{ github.com/jai-dewani}
+    {\Huge \scshape Adarsh Sulegai} \\ \vspace{1pt}
+    \vspace{1pt}
+    \small \raisebox{-0.1\height}
+    \faPhone\ 7619151888 \href{mailto:adarshsulegai50@gmail.com}{\raisebox{-0.2\height}\faEnvelope\  \underline{adarshsulegai50@gmail.com}} ~ 
+    % \href{https://twitter.com}{\raisebox{-0.2\height}\faTwitter\ \underline{twitter.com/adarshsulegai50}}  ~
+    \href{https://linkedin.com/in/adarsh-sulegai/}{\raisebox{-0.2\height}\faLinkedin\ \underline{adarsh-sulegai}}  ~
+    \href{https://github.com/adarsh500}{\raisebox{-0.2\height}\faGithub\ \underline{adarsh500}}
     \vspace{-8pt}
 \end{center}
 
@@ -147,114 +162,181 @@
 \section{Education}
   \resumeSubHeadingListStart
     \resumeSubheading
-      {International Institute of Information Technology, Naya Raipur}{August '17 -- June '21}
-      {Bachelor of Technology in Computer Science}{Naya Raipur, Chattisghar India}
+      {Dayananda Sagar College of Engineering}{Dec 2020 -- Aug 2024}
+      {B.E in Computer Science and Engineering, \textbf{CGPA: 8.84}}{Bengaluru, Karnataka}
   \resumeSubHeadingListEnd
+  
 
+
+%------RELEVANT COURSEWORK-------
+% \section{Relevant Coursework}
+%     %\resumeSubHeadingListStart
+%         \begin{multicols}{4}
+%             \begin{itemize}[itemsep=-3pt, parsep=5pt]
+%                 \item\small Data Structures and Algorithms
+%                 \item Object-Oriented Programming
+%                 \item Web Development
+%                 \item Version Control
+%                 \item Problem Solving
+%                 \item Complexity Analysis
+%             \end{itemize}
+%         \end{multicols}
+%         \vspace*{2.0\multicolsep}
+    %\resumeSubHeadingListEnd
+
+
+%-----------EXPERIENCE-----------
 \section{Experience}
   \resumeSubHeadingListStart
 
     \resumeSubheading
-      {Carl Zeiss}{July '21 -- Present}
-      {Software Engineer}{Bengaluru, Karnataka, India}
-      \vspace{-7pt}
+      {\href{https://mydukaan.io/}{\textbf{Dukaan \faExternalLink}} \emph{}}{Apr 2022 -- Jun 2022}
+      {Front-End Developer Intern}{Bangalore, Karnataka}
       \resumeItemListStart
-        \resumeItem{Worked on refining existing APIs built using ASP.NET}
-        \resumeItem{Worked with SignalR to enhance existing in time asynchronous notifications}
-        \resumeItem{Resolved bugs related to preview area and rendering of Visual Acuity and Chart Layouts in Chart Viewer}
-        \resumeItem{Utilized design patterns to introduce and implement new features like black masking for Charts built on WPF}
-        % \resumeItem{Worked on ensuring video streaming uses https   service while minimizing computational load on system}
+        \resumeItem{Worked as a Front-End developer on the core product to develop new features and polish the user experience.}
+        \resumeItem{Created over \textbf{20+} performant, responsive and reusable components from scratch.}
+        \resumeItem{Rolled out new features for review plugin like filtering, sorting reviews, and pagination used by \textbf{over 400,000 stores}}
+        \resumeItem{Integrated a plugin that allows merchants to showcase their Instagram posts and introduced custom galleries for it.}
+         \resumeItem{Migrated store themes to a new architecture which \textbf{improved performance} and \textbf{reduced app size by over 30\%} .}
+        % \resumeItem{Worked on the reviews plugin to develop new features like sorting, filtering }
+        % \resumeItem{Currently working on engineering a custom theme for the seller's store.}
+        \resumeItem{Tech Stack used: \textbf{ReactJS, NextJS, Javascript, Nunjucks and SASS}.}
       \resumeItemListEnd
-
-    \resumeSubheading
-      {Carl Zeiss}{January '21 -- June '21}
-      {FullStack Intern}{Bengaluru, Karnataka, India}
-      \vspace{-7pt}
-      \resumeItemListStart
-        \resumeItem{Implemented new methods, which were exposed as APIs using .NET framework to be utilised by frontend}
-        \resumeItem{Created and deployed new gRPC servers for reducing coupling and introduce IPC channels for various services}
-        \resumeItem{Utilized NUnit and Fluent Assertions for writing new unit test cases  improving overall development cycle   }
-      \resumeItemListEnd
-
-    % \resumeSubheading
-    %   {Directi}{May ’19 -- June ’19}
-    %   {Workshop Trainer Intern}{Naya Raipur, Chattisghar, India}
-    %   \vspace{-7pt}
-    %   \resumeItemListStart
-    %     \resumeItem{Trained  18  school  students  about  Python  programming  using  code  visualization  techniques  in  CodeChef sponsored summer camp of 2 weeks}
-    %     \resumeItem{Learned and improved upon various pedagogy techniques while improving the course content}
-    % \resumeItemListEnd
-    
+    \vspace{4pt}
   \resumeSubHeadingListEnd
+\vspace{-15pt}
 
 %-----------PROJECTS-----------
 \section{Projects}
     \vspace{-5pt}
+    
+    
+    
+    
     \resumeSubHeadingListStart
-        \resumeProjectHeading
-            {\textbf{Meme Generator} $|$ \emph{JavaScript, React}  $|$ \href{https://jai-dewani.github.io/Meme-App/}{WebApp}}{September 2020}
-            \resumeItemListStart
-                \resumeItem{Designed an easy to use single page application for creating memes}
-                \resumeItem{Used KonvaJS for Canvas display logic for presenting editable images for users to add and drag text over to create memes}
-                \resumeItem{Built features for the ease of downloading memes and upload custom images for your custom memes}
-            \resumeItemListEnd
-        \resumeProjectHeading
-            {\textbf{DeepNeural Net Visualiser} $|$ \emph{Tensorflow, Flask, Streamlit} $|$ \href{https://visualize-neural-network.herokuapp.com/}{WebApp}}{June 2020} 
-            \resumeItemListStart
-                \resumeItem{Built a webapp for easier visualisation of hidden layers in a Neural Net in real-time}
-                \resumeItem{Utilised Streamlit to create a clean frontend design to update the model layer by layer}
-                \resumeItem{Deployed the project on free-tier Heroku service to be easily accessible by anyone}
-            \resumeItemListEnd 
-        \resumeProjectHeading
-            {\textbf{FunMark} $|$ \emph{Python} $|$ \href{https://github.com/jai-dewani/fun-mark}{GitHub}}{May 2020} 
-            \resumeItemListStart
-                \resumeItem{Developed a wrapper library for bench-marking different functions and allowing creation of graphical comparisons}
-                \resumeItem{Released on PyPi package manager to be easily accessible with pip with currently over 2K downloads}
-                \resumeItem{Wrote a blog on how to utilise the library efficiently \href{https://jai-dewani.github.io/blogs/fun-mark/}{jai-dewani.github.io/blogs/fun-mark/}}
-            \resumeItemListEnd 
-        \resumeProjectHeading
-            {\textbf{Lab Works} $|$ \emph{HTML, CSS, Js, Bootstrap, Django, SQLite} $|$ \href{https://github.com/jai-dewani/Lab-Works}{GitHub}}{April 2019} 
-            \resumeItemListStart
-                \resumeItem{Built a web platform to ease the lab assessments for technical courses involving standard coding problems }
-                \resumeItem{Devised a solution regarding issues with the manual process of lab assistants checking each submission manually}
-                \resumeItem{Used 3rd party API which provides a safe enviroment to compile and run code while supporting wide range programming languages}
-                % \resumeItem{Enabled  Professors to  create coding questions and add test cases.}
-                % \resumeItem{Used JDoodle’s API to compile student’s programs and check them against predefined test cases.}
-            \resumeItemListEnd 
+    \resumeProjectHeading
+{\href{https://rapidashboard.netlify.app}{\textbf{Rapidashboard \faExternalLink}} \emph{}}{\href{https://github.com/adarsh500/Rapidashboard}{\faGithub }}
+          \resumeItemListStart
+            \resumeItem{A dashboard that is used to display users, news, and top users on the website.}
+           \resumeItem{Configured \textbf{Static-Site-Generation} and \textbf{Server-Side-Rendering} on different pages to \textbf{improve the performance} and SEO of the application.}
+            \resumeItem{Implementing a \textbf{state-management system} to persist states between components on different pages.}
+            \resumeItem{Built using \textbf{ReactJS, NextJS, TypeScript}.}
+          \resumeItemListEnd
+          \vspace{-13pt}
+          
+      \resumeProjectHeading
+{\href{https://github.com/adarsh500/FireChat}{\textbf{FireChat \faExternalLink}} \emph{}}{\href{https://github.com/adarsh500/FireChatBack}{\faGithub }}
+          \resumeItemListStart
+            \resumeItem{Engineered a \textbf{real-time} chat application that enables users to communicate in public or through personal messages}
+            \resumeItem{Integrated an \textbf{authentication} system that can be used to sign-up/login users. Implemented \textbf{routing} to redirect users after successfully logging in.}
+            \resumeItem{Engineered the feature which enabled.}
+            \resumeItem{Developed using \textbf{ReactJS}, \textbf{React router}, \textbf{Socket.io}, \textbf{Firebase, HTMl, CSS.}}
+          \resumeItemListEnd
+          \vspace{-13pt}
+
+          \resumeProjectHeading
+{\href{https://github.com/adarsh500/mern-auth-jwt}{\textbf{Mern-jwt-auth \faExternalLink}} \emph{}}{\href{https://github.com/adarsh500/mern-auth-jwt}{\faGithub }}
+          \resumeItemListStart
+            \resumeItem{Created a custom authentication and authorization template that can be used as a starter kit for all auth purposes}
+            \resumeItem{Added features like access tokens and refresh token based authentication.}
+            \resumeItem{Tech stack used:  \textbf{ReactJS, NodeJS, ExpressJS, MongoDB, JWT}}
+          \resumeItemListEnd
+          \vspace{-9pt}
+          
+      \resumeProjectHeading
+{\href{https://netflix-clone1809.netlify.app}{\textbf{Netflix Clone \faExternalLink}} \emph{}}{\href{https://github.com/adarsh500/netflix_clone}{\faGithub}}
+          \resumeItemListStart
+            
+            \resumeItem{Extracted the data for over \textbf{50+ trending shows/movies} using The movie database (tmdb)'s API.}
+            \resumeItem{This project demonstrated the use of \textbf{React hooks}, \textbf{API calls}, \textbf{component-based styling}. }
+            \resumeItem{Optimized the site for \textbf{100\% responsiveness} in order to have the same experience on a wide range of devices.}
+            \resumeItem{Assembled using \textbf{ReactJS, JavaScript, HTML, and CSS.}}
+          \resumeItemListEnd
+          \vspace{-13pt}
+          
+          
+          
+%           \resumeProjectHeading
+% {\href{https://github.com/adarsh500/FireTodo}{\textbf{FireTodo \faExternalLink}} \emph{}}{\href{https://github.com/adarsh500/FireTodo}{\faGithub }}
+%           \resumeItemListStart
+%             \resumeItem{Created a \textbf{real-time} Todo application that helps users keep track of things in order to simplify their lives.}
+%             \resumeItem{Architected \textbf{CRUD}(Create, Read, Update, Delete) operations with the help of \textbf{Firestore}.}
+%             \resumeItem{Demonstrates the usage of a real-time database.}
+%             \resumeItem{Tech stack used:  \textbf{ReactJS, MaterialUI, Firebase, HTMl, CSS.}}
+%           \resumeItemListEnd
+%           \vspace{-9pt}
+          
+          
+          
+    %   \resumeProjectHeading
+    %       {\href{https://calculator1047.netlify.app/}{\textbf{Calculator App \faExternalLink}} \emph{}}{\href{https://github.com/adarsh500/calculator}{\faGithub }}
+    %       \resumeItemListStart
+           
+    %         \resumeItem{Built a calculator which takes input from the user and returns the answer.This can perform 5+ mathematical functions.}
+    %         \resumeItem{Accepts addition, subtraction, multiplication and division functions and others.}
+    %          \resumeItem{Coded an app using \textbf{HTML, CSS, JavaScript and ReactJS.}}
+    %       \resumeItemListEnd 
+    %       \vspace{-13pt}
+%             \resumeProjectHeading
+% {\href{https://rapidashboard.netlify.app}{\textbf{Rapidashboard \faExternalLink}} \emph{}}{\href{https://github.com/adarsh500/rapidashboard{\faGithub}}
+%           \resumeItemListStart
+%             \resumeItem{A dashboard that is used to display users, news, and top users on the website}
+%             \resumeItem{Implemented Static-site-generated and server-side-rendered pages to boost the performance of the application.}
+%             \resumeItem{Implementing a state-management system to persist states between different pages}
+%             \resumeItem{Built using \textbf{ReactJS, NextJS, TypeScript}}
+%           \resumeItemListEnd
+          \vspace{-13pt}
     \resumeSubHeadingListEnd
+\vspace{12pt}
 
 
 %
 %-----------PROGRAMMING SKILLS-----------
 \section{Technical Skills}
  \begin{itemize}[leftmargin=0.15in, label={}]
-    {\item{
-     \textbf{Languages}{: C\#, Python, JavaScript} \\
-     \vspace{1pt}
-     \textbf{Developer Tools}{: Heroku, Git, GitHub, Adobe Illustrator, CI/CD} \\
-     \vspace{1pt}
-     \textbf{Technologies}{: ASP.NET, WPF, gRPC, Node.js, React, Express, Bootstrap, Passport, Django} \\
+    \small{\item{
+     \textbf{Languages}{: C++, JavaScript, Typescript.} \\
+     \textbf{Developer Tools}{: GitHub, Firebase, MongoDB, Postman.} \\
+     \textbf{Technologies/Frameworks}{: Git, ReactJS, NextJs, NodeJS, ExpressJS, Nunjucks, SASS, Unix.} \\
     }}
  \end{itemize}
- \vspace{-16pt}
-
-
+ \vspace{-11pt}
+ 
+%  \section{About Me}
 
 %-----------INVOLVEMENT---------------
-\section{ACADEMIC ACHIEVEMENTS \& EXTRA-CURRICULAR}
-
-\begin{itemize}[leftmargin=0.2in]
-  \achievementItem{\textbf{Mentored and Judged over 50+ teams} in various hackathons like HackCBS 4.0, HacckOn 2.0 and DotSlash 4.0}
-  \achievementItem{\textbf{Co-founded}  the  first  technical  club  at  IIIT-NR,  organized  various  events, talks and hackathons to  promote competitive programming and development while improve the coding environment of the Institute.}
-  \achievementItem{Ranked \textbf{1127\textsuperscript{th}} globally and \textbf{115\textsuperscript{th}} in India in Google HashCode, out of 10724 teams}
-  \achievementItem{Qualified ACM-ICPC 2020 in Kanpur(\textbf{rank 63}) and Gwalior regions}
-  \achievementItem{Qualified ACM-ICPC 2019 in Kharagpur(\textbf{rank 81}) and Amritapuri(\textbf{rank 37}) regions.}
-  \achievementItem{Successfully cleared the Foundation level in \textbf{CCDSAP Certification} CodeChef.}
-  \achievementItem{Qualified CodeChef’s Snackdown with a rank of \textbf{2587 out of 27875}  teams}
-  \achievementItem{Ranked {\bf 3\textsuperscript{rd} in Codeutsava 2020} 2020, NIT Raipur’s Annual Hackathon out of 30 participating teams}
-\end{itemize}
-        
+\section{Leadership / Extracurricular}
+    \resumeSubHeadingListStart
+    \resumeSubheading{Scaler Community}{Sep 2021 -- Nov 2021}{Moderator}{}
+        \resumeItemListStart
+            \resumeItem{Manage a community of 67,000+ students/experienced professionals along with my team. Interact with the community members, resolving technical doubts, organizing fun events/activities oriented towards learning.}
+            
+        \resumeItemListEnd     
+         \resumeSubheading{Google Developer Student Club - DSI}{Sep 2021 -- Present}{Member}{}
+        \resumeItemListStart
+            \resumeItem{An online community of developers. Enables learning in-demand technologies through workshops and speaker sessions that are developed by google.}
+        \resumeItemListEnd
+        % \resumeSubheading{Stanford - Code in Place}{April 2021 -- May 2021}{Student}{}
+        %     \resumeItemListStart
+        %         \resumeItem{Shortlisted as a student in Stanford University's Code In Place program among 45,000+ applicants. Learnt Python by using Stanford's Karel.}
+        %     \resumeItemListEnd
+        \resumeSubHeadingListEnd
+            
+       
+       
+\section{Achievements}
+    % \resumeSubHeadingListStart
+    \resumeItemListStart
+        \resumeItem {Solved over \textbf{400+} problems on 
+        {\href{https://leetcode.com/adarsh50/}{\textbf{LeetCode }\faExternalLink}},
+        {\href{https://auth.geeksforgeeks.org/user/adarsh500/profile}{\textbf{GeeksForGeeks \faExternalLink}}},
+        {\href{https://www.codechef.com/users/adarsh500}{\textbf{CodeChef \faExternalLink}}} and 
+        {\href{https://hack.codingblocks.com/app/users/274354}{\textbf{HackerBlocks \faExternalLink}}}.}
+        \vspace{-5pt}
+        \resumeItem {Achieved a global rank of \textbf{235 (top 5\%)} in CodeChef starters 28.}
+    \resumeItemListEnd
     % \resumeSubHeadingListEnd
+    
 
 
 \end{document}
